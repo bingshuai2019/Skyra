@@ -122,6 +122,17 @@ python eval.py \
 ```
 
 
+- inference on a custom list of videos/frame directories:
+```bash
+cd eval
+python inference_video_list.py \
+    --video_list /path/to/videos.txt \
+    --model_path /path/to/Skyra-SFT \
+    --save_dir results/Skyra
+```
+`videos.txt` can contain either raw video paths (e.g., `.mp4`) or parsed frame directory paths containing `timestamps.txt` and numbered PNG frames.
+
+
 ## ⚖️ License
 
 The **ViF-CoT-4K** dataset and **Skyra** model weights are released under the **CC BY 4.0** license. Users must adhere to the terms of source datasets (Kinetics-400, Panda-70M, HD-VILA-100M).
